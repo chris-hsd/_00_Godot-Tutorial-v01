@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bgd0mu43oyrri"]
+
+[node name="World" type="Node2D" unique_id=1461958230]
+
+[node name="Terrains" type="Node2D" parent="." unique_id=181886335]
+
+[node name="Aninals" type="Node" parent="." unique_id=1642628030]

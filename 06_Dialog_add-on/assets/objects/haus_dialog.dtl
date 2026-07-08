@@ -1,0 +1,23 @@
+[style name="fixed_dialog_box"]
+Haus: Hallo.
+Marie: Was willst du?
+Haus: Warum bist du schon wieder hier?
+Marie: Vielleicht wohne ich hier.
+Haus: Das behauptest du jedes Mal.
+Marie: Es stimmt.
+Haus: Dann sag mir, wie viele Zimmer ich habe.
+Marie: Das weiß ich nicht.
+Haus: Siehst du.
+Marie: Häuser stellen seltsame Fragen.
+Haus: Menschen geben seltsame Antworten.
+Marie: Warum schaust du mich so an?
+Haus: Ich habe keine Augen. Das macht es einfacher.
+Marie: Das ergibt keinen Sinn.
+Haus: Sinn ist nur eine schlechte Angewohnheit.
+Marie: Ich glaub Du hörst mir nicht zu. Sollen wir es nochmal versuchen?
+- No
+	set {restart} = false
+- Yes
+	set {restart} = true
+if {restart} == true:
+	jump

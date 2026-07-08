@@ -1,0 +1,105 @@
+[gd_scene format=3 uid="uid://bmpd6riva4uhi"]
+
+[ext_resource type="Texture2D" uid="uid://bg0yx5ob8piuj" path="res://assets/dog/north/frame_000.png" id="1_7ocu4"]
+[ext_resource type="Script" uid="uid://btfcaf0w24xtm" path="res://scenes/hund.gd" id="1_apjdw"]
+[ext_resource type="Texture2D" uid="uid://ci7xsxkx7a7br" path="res://assets/dog/north/frame_001.png" id="2_apjdw"]
+[ext_resource type="Texture2D" uid="uid://dfuykisba818d" path="res://assets/dog/north/frame_002.png" id="3_6hdvj"]
+[ext_resource type="Texture2D" uid="uid://dbe7tdjnhqnp8" path="res://assets/dog/north/frame_003.png" id="4_h0v1j"]
+[ext_resource type="Texture2D" uid="uid://bcru743trx02y" path="res://assets/dog/south/frame_000.png" id="5_gkdqj"]
+[ext_resource type="Texture2D" uid="uid://cqjj1a2u1gkhq" path="res://assets/dog/west/frame_000.png" id="6_8mmh4"]
+[ext_resource type="Texture2D" uid="uid://lv32ihilgn05" path="res://assets/dog/west/frame_001.png" id="7_yusef"]
+[ext_resource type="Texture2D" uid="uid://bocy4aexxqb0i" path="res://assets/dog/west/frame_002.png" id="8_k0yiq"]
+[ext_resource type="Texture2D" uid="uid://bsu7ypynckyy7" path="res://assets/dog/west/frame_003.png" id="9_8b8ve"]
+[ext_resource type="Texture2D" uid="uid://d2tm4dgb03osw" path="res://assets/dog/east/frame_000.png" id="10_au35b"]
+[ext_resource type="Texture2D" uid="uid://bc6o48g3enupv" path="res://assets/dog/east/frame_001.png" id="11_jec60"]
+[ext_resource type="Texture2D" uid="uid://c7ktredq37pqj" path="res://assets/dog/east/frame_002.png" id="12_kh6sn"]
+[ext_resource type="Texture2D" uid="uid://ghmmmlj6yvmj" path="res://assets/dog/east/frame_003.png" id="13_mctri"]
+[ext_resource type="Texture2D" uid="uid://dn7jckgpena8n" path="res://assets/dog/south/frame_001.png" id="14_2cyob"]
+[ext_resource type="Texture2D" uid="uid://bi4qo5fljwsbg" path="res://assets/dog/south/frame_002.png" id="15_vasqs"]
+[ext_resource type="Texture2D" uid="uid://dgj0esfaht887" path="res://assets/dog/south/frame_003.png" id="16_jwl7t"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r3mjf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_7ocu4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_apjdw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_6hdvj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_h0v1j")
+}],
+"loop": true,
+"name": &"hoch",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_gkdqj")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_8mmh4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_yusef")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_k0yiq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_8b8ve")
+}],
+"loop": true,
+"name": &"links",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_au35b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_jec60")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_kh6sn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_mctri")
+}],
+"loop": true,
+"name": &"rechts",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_gkdqj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_2cyob")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_vasqs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_jwl7t")
+}],
+"loop": true,
+"name": &"runter",
+"speed": 5.0
+}]
+
+[node name="Hund" type="CharacterBody2D" unique_id=785020791]
+script = ExtResource("1_apjdw")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=985639744]
+sprite_frames = SubResource("SpriteFrames_r3mjf")
+animation = &"hoch"

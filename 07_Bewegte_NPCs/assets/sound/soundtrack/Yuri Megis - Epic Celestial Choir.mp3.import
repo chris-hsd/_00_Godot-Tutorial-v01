@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c40sneu3fg2x4"
+path="res://.godot/imported/Yuri Megis - Epic Celestial Choir.mp3-21dc98009d5ceb934f70ceef9f0e83d7.mp3str"
+
+[deps]
+
+source_file="res://assets/sound/soundtrack/Yuri Megis - Epic Celestial Choir.mp3"
+dest_files=["res://.godot/imported/Yuri Megis - Epic Celestial Choir.mp3-21dc98009d5ceb934f70ceef9f0e83d7.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

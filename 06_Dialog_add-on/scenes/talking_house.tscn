@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://bheh6c080rtwh"]
+
+[ext_resource type="Texture2D" uid="uid://bgdmua8nruxdx" path="res://assets/objects/Chicken_House.png" id="1_0s47j"]
+[ext_resource type="Script" uid="uid://ch2y7vx4nsh4" path="res://scenes/talking_house.gd" id="1_d1i08"]
+[ext_resource type="Script" uid="uid://daq1vwhl7b6yu" path="res://scenes/hous_talk_trigger.gd" id="2_8f6jt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d1i08"]
+size = Vector2(34, 29.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0s47j"]
+size = Vector2(36, 18)
+
+[node name="TalkingHouse" type="StaticBody2D" unique_id=1427945300]
+collision_layer = 3
+script = ExtResource("1_d1i08")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1878934259]
+position = Vector2(0, -1)
+texture = ExtResource("1_0s47j")
+
+[node name="HousTalkTrigger" type="Area2D" parent="." unique_id=107981253]
+collision_layer = 0
+collision_mask = 4
+script = ExtResource("2_8f6jt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HousTalkTrigger" unique_id=1966866227]
+position = Vector2(0, 3)
+shape = SubResource("RectangleShape2D_d1i08")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1315202222]
+position = Vector2(0, -13)
+shape = SubResource("RectangleShape2D_0s47j")
+
+[node name="Label" type="Label" parent="." unique_id=1352457200]
+offset_left = -22.0
+offset_top = -20.0
+offset_right = 136.0
+offset_bottom = 3.0
+scale = Vector2(0.3, 0.3)
+theme_override_colors/font_color = Color(0.03137255, 0.0627451, 0.2, 1)
+theme_override_font_sizes/font_size = 32
+text = "Leertaste für Dialog!"
+
+[connection signal="body_entered" from="HousTalkTrigger" to="HousTalkTrigger" method="_on_body_entered"]
+[connection signal="body_exited" from="HousTalkTrigger" to="HousTalkTrigger" method="_on_body_exited"]

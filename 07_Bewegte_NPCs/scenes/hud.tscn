@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://cucxs7dxuocwq"]
+
+[ext_resource type="Script" uid="uid://diwlha0c1wb5m" path="res://scenes/hud.gd" id="1_ahhtf"]
+[ext_resource type="AudioStream" uid="uid://c15qyyy2jhk6k" path="res://assets/sound/ui_sound/egg_collected.wav" id="2_oo0fn"]
+
+[node name="Hud" type="Control" unique_id=2140588887]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ahhtf")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1929907296]
+
+[node name="EggCounter" type="Label" parent="CanvasLayer" unique_id=172487542]
+offset_right = 40.0
+offset_bottom = 67.0
+theme_override_font_sizes/font_size = 48
+
+[node name="EggCollectedSound" type="AudioStreamPlayer" parent="." unique_id=1575093724]
+stream = ExtResource("2_oo0fn")

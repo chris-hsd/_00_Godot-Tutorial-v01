@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://31vmqqgwmoj4"]
+
+[ext_resource type="AudioStream" uid="uid://c15qyyy2jhk6k" path="res://assets/sound/ui_sound/egg_collected.wav" id="2_c0r5r"]
+
+[sub_resource type="GDScript" id="GDScript_yi0lg"]
+script/source = "extends Node
+ 
+@onready var click:   AudioStreamPlayer = $Click
+#@onready var hover:   AudioStreamPlayer = $Hover
+#@onready var confirm: AudioStreamPlayer = $Confirm
+ 
+func play_click() -> void:
+	click.play()
+ 
+#func play_hover() -> void:
+	## Hover-Sound nicht stapeln
+	#if not hover.playing:
+		#hover.play()
+ #
+## Bestätigung abspielen und auf das Ende warten
+#func play_confirm_and_wait() -> void:
+	#confirm.play()
+	#await confirm.finished
+ 
+# Alle Buttons einer Szene rekursiv verbinden
+func connect_buttons(root: Node) -> void:
+	for child in root.get_children():
+		if child is BaseButton:
+			child.pressed.connect(play_click)
+			#child.mouse_entered.connect(play_hover)
+		if child.get_child_count() > 0:
+			connect_buttons(child)
+"
+
+[node name="UISounds" type="Control" unique_id=645283900]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = SubResource("GDScript_yi0lg")
+
+[node name="Click" type="AudioStreamPlayer" parent="." unique_id=1539931359]
+stream = ExtResource("2_c0r5r")

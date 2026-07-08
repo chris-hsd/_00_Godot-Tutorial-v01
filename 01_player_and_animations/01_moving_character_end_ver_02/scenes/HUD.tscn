@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://p02nwcnistt6"]
+
+[node name="Hud" type="Control" unique_id=525865682]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=117280330]
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=1183631270]
+offset_left = 12.0
+offset_top = 7.0
+offset_right = 195.0
+offset_bottom = 30.0
+theme_override_font_sizes/font_size = 40
+text = "Press 'N' für aNimation "
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer" unique_id=1896869011]
+offset_left = 12.0
+offset_top = 63.0
+offset_right = 198.0
+offset_bottom = 143.0
+bbcode_enabled = true
+text = "[b]BBCode[/b]
+[i]in einem[/i]
+[color=red]Text-Lable[/color]"

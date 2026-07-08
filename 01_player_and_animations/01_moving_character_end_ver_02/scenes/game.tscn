@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cedwe5si18m14"]
+
+[ext_resource type="PackedScene" uid="uid://cbdy3n4udmx7m" path="res://scenes/player.tscn" id="1_uwrxv"]
+[ext_resource type="PackedScene" uid="uid://bus5340jqletb" path="res://scenes/world.tscn" id="2_yqjtg"]
+[ext_resource type="PackedScene" uid="uid://p02nwcnistt6" path="res://scenes/HUD.tscn" id="3_lnu2h"]
+
+[node name="Game" type="Node2D" unique_id=770382196]
+
+[node name="World" parent="." unique_id=1350336855 instance=ExtResource("2_yqjtg")]
+position = Vector2(57, 9)
+
+[node name="CharacterBody2D" parent="." unique_id=877620901 instance=ExtResource("1_uwrxv")]
+position = Vector2(76, 34)
+
+[node name="HUD" parent="." unique_id=525865682 instance=ExtResource("3_lnu2h")]
+offset_left = -75.0
+offset_top = -34.0
+offset_right = -75.0
+offset_bottom = -34.0

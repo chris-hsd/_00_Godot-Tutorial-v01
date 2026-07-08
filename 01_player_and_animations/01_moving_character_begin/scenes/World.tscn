@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://d3t14p6u7qmab"]
+
+[ext_resource type="Texture2D" uid="uid://cjlaff826ygtn" path="res://assets/witchtiles_2.png" id="1_kqs1s"]
+
+[node name="World" type="Node2D" unique_id=723610441]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1030419258]
+
+[node name="Tisch" type="Sprite2D" parent="StaticBody2D" unique_id=1491264455]
+position = Vector2(259, 72)
+texture = ExtResource("1_kqs1s")
+region_enabled = true
+region_rect = Rect2(4, 66, 90, 60)
+
+[node name="Topf" type="Sprite2D" parent="StaticBody2D" unique_id=1189914579]
+position = Vector2(258, 53)
+texture = ExtResource("1_kqs1s")
+region_enabled = true
+region_rect = Rect2(226, 22, 30, 36)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=554755454]
+zoom = Vector2(3, 3)
