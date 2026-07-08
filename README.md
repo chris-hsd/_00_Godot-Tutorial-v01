@@ -1,4 +1,4 @@
-> **🌐 Sprachen / Languages:** Dieses README ist zweisprachig. Zuerst folgt die **deutsche** Fassung, danach der **englische** Originaltext. — This README is bilingual. The **German** version comes first, followed by the **English** original. ([→ English](#english-version))
+> **🌐 Sprachen / Languages:** Dieses README ist zweisprachig.  **English** original. ([→ English](#english-version))
 
 ---
 
@@ -6,11 +6,11 @@
 
 # Godot 2D Top-Down — Tutorials zu Kernmechaniken
 
-Eine Sammlung kleiner, in sich geschlossener Godot-4.6-Projekte, die jeweils eine einzelne **Kernmechanik** für die Entwicklung von 2D-Top-Down-Spielen isolieren. Arbeite sie in der nummerierten Reihenfolge durch: Jedes Projekt baut auf den Ideen des vorherigen auf. Die Projekte `03`–`07` enthalten einen `docs/`-Ordner mit einer Schritt-für-Schritt-Ausarbeitung (`.docx` / `.pdf`, auf Deutsch).
+Eine Sammlung kleiner, in sich geschlossener Godot-4.6-Projekte, die jeweils eine einzelne **Kernmechanik** für die Entwicklung von 2D-Top-Down-Spielen isolieren. Jedes Projekt baut auf den Ideen des vorherigen auf. Die Projekte `03`–`07` enthalten einen `docs/`-Ordner mit einer Schritt-für-Schritt-Ausarbeitung (`.docx` / `.pdf`, auf Deutsch).
 
 > Engine: Godot **4.6** (GL Compatibility). Wiederkehrende Besetzung: eine `player`-Figur (CharacterBody2D „Girl"), eine `world`/`game`-Szene und — ab Projekt 04 — einsammelbare **Eier** sowie ein globaler `events.gd`-Signalbus.
 
-## Die 7 Projekttypen
+## Die 7 Projektinhalte
 
 **01 — Spieler & Animationen** (`01_player_and_animations`)
 Der Ausgangspunkt: ein Projekt anlegen, Nodes und Skripte hinzufügen und einen `CharacterBody2D` per Eingabe steuern. Führt die GDScript-Grundlagen und die richtungsabhängige Sprite-Animation (idle / oben / unten / links / rechts) über `AnimatedSprite2D` ein. Wird mit einer `begin`- und einer `end`-Version ausgeliefert, sodass du vorher/nachher vergleichen kannst.
@@ -44,7 +44,7 @@ Drei Arten, Objekte zu bewegen, alle unter Wiederverwendung einer `egg.tscn`: **
 
 # Godot 2D Top-Down — Core Mechanics Tutorials
 
-A collection of small, self-contained Godot 4.6 projects, each isolating one **core mechanic** for building 2D top-down games. Work through them in numbered order: every project builds on the ideas of the previous one. Projects `03`–`07` include a `docs/` folder with a step-by-step write-up (`.docx` / `.pdf`, in German).
+A collection of small, self-contained Godot 4.6 projects, each isolating one **core mechanic** for building 2D top-down games.   every project builds on the ideas of the previous one. Projects `03`–`07` include a `docs/` folder with a step-by-step write-up (`.docx` / `.pdf`, in German).
 
 > Engine: Godot **4.6** (GL Compatibility). Recurring cast: a `player` (CharacterBody2D "Girl"), a `world`/`game` scene, and — from project 04 onward — collectible **eggs** and a global `events.gd` signal bus.
 
